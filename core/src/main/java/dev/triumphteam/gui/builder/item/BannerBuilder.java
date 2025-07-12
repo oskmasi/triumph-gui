@@ -73,7 +73,7 @@ public final class BannerBuilder extends BaseItemBuilder<BannerBuilder> {
     }
 
     /**
-     * Sets the base color for this banner
+     * Sets the base pattern color for this banner
      *
      * @param color the base color
      * @return {@link BannerBuilder}
@@ -82,10 +82,7 @@ public final class BannerBuilder extends BaseItemBuilder<BannerBuilder> {
     @NotNull
     @Contract("_ -> this")
     public BannerBuilder baseColor(@NotNull final DyeColor color) {
-        final BannerMeta bannerMeta = (BannerMeta) getMeta();
-        bannerMeta.setBaseColor(color);
-        setMeta(bannerMeta);
-        return this;
+        return pattern(color, PatternType.BASE);
     }
 
     /**
