@@ -1,6 +1,6 @@
 pluginManagement {
     plugins {
-        kotlin("jvm") version "1.9.10"
+        kotlin("jvm") version "2.0.21"
     }
 }
 rootProject.name = "triumph-gui"
